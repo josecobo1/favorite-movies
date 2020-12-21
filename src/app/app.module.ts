@@ -1,14 +1,20 @@
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { FavMoviesComponent } from './fav-movies/fav-movies.component';
+import { FavMovieComponent } from './fav-movie/fav-movie.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FavMoviesComponent,
+    FavMovieComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
