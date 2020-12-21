@@ -1,0 +1,7 @@
+<h1>{{title}}</h1>
+
+<!-- <ul>
+  <li class="movie" *ngFor="let movie of favoriteMovies">{{movie.title}}</li>
+</ul>
+ -->
+<app-favorite-movie  *ngFor="let movie of favoriteMovies" [favoriteMovie]='movie'></app-favorite-movie>

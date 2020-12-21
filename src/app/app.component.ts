@@ -1,10 +1,16 @@
+import { Movie } from './movie';
 import { Component } from '@angular/core';
 
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template:`<app-favorite-movies></app-favorite-movies>`,
+  selector: 'app-root'
 })
 export class AppComponent {
-  title = 'favorite-movies';
+
+favoriteMovies: Movie[] = [
+  { title: 'Interstellar' } as Movie,
+  { title: 'The big Lebowski' } as Movie,
+  { title: 'Borat' } as Movie
+];
 }
